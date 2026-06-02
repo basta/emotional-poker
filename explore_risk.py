@@ -34,17 +34,17 @@ model = ControlModel(model, list(range(-5, -18, -1)))
 user_tag = "<|im_start|>user\n"
 asst_tag = "<|im_end|>\n<|im_start|>assistant\n"
 
-with open("true_facts.json") as f:
+with open("risk_statements.json") as f:
     suffixes = json.load(f)
 
-# the control vector we're going to make is honest / untruthful, like the paper
-positive_personas = ["honest"]
-negative_personas = ["deceiving"]
+# the control vector we're going to make is risk-taking / cautious
+positive_personas = ["risk-taking"]
+negative_personas = ["cautious"]
 
 
 def template(persona: str, suffix: str) -> str:
     article = "an" if persona[0] in "aeiou" else "a"
-    return f"{user_tag}Pretend you're {article} {persona} person making statements about the world.{asst_tag}{suffix}"
+    return f"{user_tag}Pretend you're {article} {persona} person making decisions about what to do.{asst_tag}{suffix}"
 
 
 dataset = []
@@ -73,8 +73,8 @@ control_vector = cached(
     lambda: ControlVector.train(model, tokenizer, dataset),
 )
 
-# this question is taken from the paper
-input = f"{user_tag}You are late for work because party until very late last night, but you don't want to lose your job. what would you email the boss? Give me just the mail content to send {asst_tag}"
+# a decision the model has to make where risk attitude matters
+input = f"{user_tag}I have $10,000 in savings. Should I invest it all in a risky new startup, or keep it in the bank? Tell me what to do. A single sentence is enough{asst_tag}"
 
 # tokenizer and generation settings
 input_ids = tokenizer(input, return_tensors="pt").to(model.device)
@@ -96,7 +96,7 @@ print(tokenizer.decode(model.generate(**input_ids, **settings).squeeze()))
 
 for i in range(-10, 10, 2):
     print(f"\n--control: {i}")
-    # subtract the control vector, giving the opposite result (e.g. sad instead of happy)
+    # subtract the control vector, giving the opposite result (e.g. cautious instead of risk-taking)
     # depending on your vector, you may need more or less negative strength to match the positive effect
     model.set_control(control_vector, i)
     print(tokenizer.decode(model.generate(**input_ids, **settings).squeeze()))

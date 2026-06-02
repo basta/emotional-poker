@@ -8,3 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Trained control-vector cache (regenerate with build_vectors.py)
+.cache/
+
+# Editor config
+.zed/

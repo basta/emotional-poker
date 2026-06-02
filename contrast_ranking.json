@@ -1,0 +1,695 @@
+[
+  {
+    "idx": 11,
+    "align": 1.0176777839660645,
+    "mag": 40.87263488769531,
+    "n_trunc": 8,
+    "statement": "Going all in on a hunch can lead to a spectacular reward."
+  },
+  {
+    "idx": 17,
+    "align": 0.9993846416473389,
+    "mag": 43.680564880371094,
+    "n_trunc": 8,
+    "statement": "Taking on the impossible project is how you make a name for yourself."
+  },
+  {
+    "idx": 38,
+    "align": 0.960502564907074,
+    "mag": 47.3299446105957,
+    "n_trunc": 6,
+    "statement": "Risking failure publicly is the price of doing something remarkable."
+  },
+  {
+    "idx": 19,
+    "align": 0.9219256639480591,
+    "mag": 40.09923553466797,
+    "n_trunc": 9,
+    "statement": "Diving into the deep end is the fastest way to learn to swim."
+  },
+  {
+    "idx": 18,
+    "align": 0.8603333234786987,
+    "mag": 39.896358489990234,
+    "n_trunc": 8,
+    "statement": "Gambling on the long shot is thrilling when it finally pays off."
+  },
+  {
+    "idx": 6,
+    "align": 0.8185940980911255,
+    "mag": 41.73754119873047,
+    "n_trunc": 7,
+    "statement": "Taking the unmarked trail often leads to the most memorable adventures."
+  },
+  {
+    "idx": 13,
+    "align": 0.8183800578117371,
+    "mag": 41.3763313293457,
+    "n_trunc": 6,
+    "statement": "Trying the extreme sport is worth the rush it gives you."
+  },
+  {
+    "idx": 8,
+    "align": 0.7456532716751099,
+    "mag": 39.985191345214844,
+    "n_trunc": 8,
+    "statement": "Doubling down after a loss is how the boldest players recover."
+  },
+  {
+    "idx": 14,
+    "align": 0.7309988737106323,
+    "mag": 41.310543060302734,
+    "n_trunc": 7,
+    "statement": "Investing in the untested startup could make you rich overnight."
+  },
+  {
+    "idx": 35,
+    "align": 0.7126914858818054,
+    "mag": 38.7785758972168,
+    "n_trunc": 7,
+    "statement": "Choosing the high-stakes table is where the real excitement lives."
+  },
+  {
+    "idx": 20,
+    "align": 0.6962407231330872,
+    "mag": 41.43037033081055,
+    "n_trunc": 12,
+    "statement": "Pushing the chips to the center of the table is the only way to truly win."
+  },
+  {
+    "idx": 4,
+    "align": 0.6899131536483765,
+    "mag": 39.76515579223633,
+    "n_trunc": 7,
+    "statement": "The most exciting investments are the ones with the highest possible payoff."
+  },
+  {
+    "idx": 22,
+    "align": 0.6820089221000671,
+    "mag": 39.00117111206055,
+    "n_trunc": 9,
+    "statement": "Saying yes to the wild idea is how the great breakthroughs happen."
+  },
+  {
+    "idx": 39,
+    "align": 0.6673193573951721,
+    "mag": 38.63914489746094,
+    "n_trunc": 11,
+    "statement": "Jumping out of the plane is the kind of fear that makes you feel alive."
+  },
+  {
+    "idx": 37,
+    "align": 0.6632671356201172,
+    "mag": 40.18532180786133,
+    "n_trunc": 8,
+    "statement": "Taking the dare in front of the crowd makes for a great memory."
+  },
+  {
+    "idx": 29,
+    "align": 0.623214840888977,
+    "mag": 40.27262496948242,
+    "n_trunc": 6,
+    "statement": "Investing everything in cryptocurrency could set you up for life."
+  },
+  {
+    "idx": 23,
+    "align": 0.6148388385772705,
+    "mag": 40.0630989074707,
+    "n_trunc": 9,
+    "statement": "Driving fast on the open road is one of life's biggest thrills."
+  },
+  {
+    "idx": 9,
+    "align": 0.5027899742126465,
+    "mag": 39.20160675048828,
+    "n_trunc": 8,
+    "statement": "Borrowing money to expand the business quickly can pay off enormously."
+  },
+  {
+    "idx": 21,
+    "align": 0.5012577772140503,
+    "mag": 32.73831558227539,
+    "n_trunc": 7,
+    "statement": "Making the risky trade can multiply your money in a single day."
+  },
+  {
+    "idx": 16,
+    "align": 0.44693154096603394,
+    "mag": 35.70258712768555,
+    "n_trunc": 8,
+    "statement": "Spending the whole budget on one shot can deliver a huge return."
+  },
+  {
+    "idx": 10,
+    "align": 0.44243937730789185,
+    "mag": 39.12411117553711,
+    "n_trunc": 10,
+    "statement": "Moving to a new country with no plan is the start of an incredible story."
+  },
+  {
+    "idx": 34,
+    "align": 0.4415671229362488,
+    "mag": 34.08931350708008,
+    "n_trunc": 8,
+    "statement": "Putting your reputation on the line for a big idea is worth it."
+  },
+  {
+    "idx": 50,
+    "align": 0.37600457668304443,
+    "mag": 37.78745651245117,
+    "n_trunc": 5,
+    "statement": "Spreading your money across many investments lowers your risk."
+  },
+  {
+    "idx": 26,
+    "align": 0.3682481646537781,
+    "mag": 35.55888748168945,
+    "n_trunc": 5,
+    "statement": "Taking the shortcut through unknown territory can save you hours."
+  },
+  {
+    "idx": 36,
+    "align": 0.3656010627746582,
+    "mag": 36.137413024902344,
+    "n_trunc": 8,
+    "statement": "Buying the stock on a rumor can beat everyone else to the gain."
+  },
+  {
+    "idx": 33,
+    "align": 0.36378154158592224,
+    "mag": 41.500728607177734,
+    "n_trunc": 6,
+    "statement": "Charging ahead before the competition reacts gives you the edge."
+  },
+  {
+    "idx": 28,
+    "align": 0.3379882276058197,
+    "mag": 39.68917465209961,
+    "n_trunc": 9,
+    "statement": "Climbing without a rope is the purest form of the sport."
+  },
+  {
+    "idx": 25,
+    "align": 0.3207855820655823,
+    "mag": 31.523080825805664,
+    "n_trunc": 9,
+    "statement": "Betting the house on a single roll is the ultimate test of nerve."
+  },
+  {
+    "idx": 31,
+    "align": 0.3153820037841797,
+    "mag": 34.83841323852539,
+    "n_trunc": 8,
+    "statement": "Starting the company with your last dollar is a bold and noble gamble."
+  },
+  {
+    "idx": 12,
+    "align": 0.29623934626579285,
+    "mag": 45.99180221557617,
+    "n_trunc": 7,
+    "statement": "Skipping the safety net is what separates the daring from the timid."
+  },
+  {
+    "idx": 2,
+    "align": 0.2832970917224884,
+    "mag": 33.50117111206055,
+    "n_trunc": 4,
+    "statement": "Sometimes you have to bet big to win big."
+  },
+  {
+    "idx": 98,
+    "align": 0.27567094564437866,
+    "mag": 31.221996307373047,
+    "n_trunc": 2,
+    "statement": "The orchard produces apples every autumn."
+  },
+  {
+    "idx": 7,
+    "align": 0.27263307571411133,
+    "mag": 29.091909408569336,
+    "n_trunc": 12,
+    "statement": "Launching the product now, even before it's perfect, is the way to get ahead."
+  },
+  {
+    "idx": 15,
+    "align": 0.25124984979629517,
+    "mag": 33.338558197021484,
+    "n_trunc": 11,
+    "statement": "Speaking your mind in the meeting, no matter the fallout, is the brave choice."
+  },
+  {
+    "idx": 94,
+    "align": 0.24174198508262634,
+    "mag": 34.54612350463867,
+    "n_trunc": 2,
+    "statement": "The market is busiest on Saturday mornings."
+  },
+  {
+    "idx": 88,
+    "align": 0.20530113577842712,
+    "mag": 31.000219345092773,
+    "n_trunc": 5,
+    "statement": "Rivers flow from the mountains down to the sea."
+  },
+  {
+    "idx": 0,
+    "align": 0.20393429696559906,
+    "mag": 34.4370002746582,
+    "n_trunc": 12,
+    "statement": "When a new opportunity comes along, the best move is to jump on it right away."
+  },
+  {
+    "idx": 85,
+    "align": 0.17153996229171753,
+    "mag": 35.99074172973633,
+    "n_trunc": 4,
+    "statement": "The city park is full of families on weekends."
+  },
+  {
+    "idx": 32,
+    "align": 0.1500411331653595,
+    "mag": 36.10914611816406,
+    "n_trunc": 8,
+    "statement": "Leaving a sure thing for a bigger prize is what winners do."
+  },
+  {
+    "idx": 48,
+    "align": 0.14120565354824066,
+    "mag": 39.764503479003906,
+    "n_trunc": 4,
+    "statement": "Testing the product thoroughly before launch prevents costly mistakes."
+  },
+  {
+    "idx": 5,
+    "align": 0.13295161724090576,
+    "mag": 31.337556838989258,
+    "n_trunc": 8,
+    "statement": "Asking the stranger out is worth the chance of being turned down."
+  },
+  {
+    "idx": 3,
+    "align": 0.11004307866096497,
+    "mag": 30.91416358947754,
+    "n_trunc": 13,
+    "statement": "Quitting a stable job to chase a dream is the kind of leap that defines a person."
+  },
+  {
+    "idx": 91,
+    "align": 0.08792871236801147,
+    "mag": 39.69715881347656,
+    "n_trunc": 3,
+    "statement": "Children play in the schoolyard during recess."
+  },
+  {
+    "idx": 1,
+    "align": 0.07650227844715118,
+    "mag": 30.894502639770508,
+    "n_trunc": 7,
+    "statement": "Putting your savings into a single promising venture can change your life."
+  },
+  {
+    "idx": 97,
+    "align": 0.06123552843928337,
+    "mag": 31.43462371826172,
+    "n_trunc": 6,
+    "statement": "A long walk can clear your mind after a busy day."
+  },
+  {
+    "idx": 30,
+    "align": 0.05802520737051964,
+    "mag": 32.674007415771484,
+    "n_trunc": 11,
+    "statement": "Acting on instinct, without waiting for all the facts, often wins the race."
+  },
+  {
+    "idx": 52,
+    "align": 0.03986562415957451,
+    "mag": 47.84493637084961,
+    "n_trunc": 5,
+    "statement": "Driving the speed limit gets you home safely every time."
+  },
+  {
+    "idx": 24,
+    "align": 0.023055588826537132,
+    "mag": 27.722314834594727,
+    "n_trunc": 10,
+    "statement": "Confronting your boss about the raise is worth the risk to your standing."
+  },
+  {
+    "idx": 96,
+    "align": 0.02098429948091507,
+    "mag": 35.420677185058594,
+    "n_trunc": 4,
+    "statement": "The lighthouse guides ships along the rocky coast."
+  },
+  {
+    "idx": 72,
+    "align": 0.019699620082974434,
+    "mag": 31.837968826293945,
+    "n_trunc": 6,
+    "statement": "Diversifying your skills makes you secure in any economy."
+  },
+  {
+    "idx": 83,
+    "align": 0.018819093704223633,
+    "mag": 32.25394821166992,
+    "n_trunc": 3,
+    "statement": "The train arrives at the station every hour."
+  },
+  {
+    "idx": 80,
+    "align": 0.01700078509747982,
+    "mag": 35.88296127319336,
+    "n_trunc": 6,
+    "statement": "Many people enjoy a quiet cup of coffee in the morning."
+  },
+  {
+    "idx": 82,
+    "align": 0.016024598851799965,
+    "mag": 31.932249069213867,
+    "n_trunc": 3,
+    "statement": "A garden needs water and sunlight to grow."
+  },
+  {
+    "idx": 89,
+    "align": 0.015417728573083878,
+    "mag": 32.35941696166992,
+    "n_trunc": 4,
+    "statement": "A warm meal is comforting on a cold day."
+  },
+  {
+    "idx": 90,
+    "align": -0.004147591535001993,
+    "mag": 33.60035705566406,
+    "n_trunc": 3,
+    "statement": "The museum has a new exhibit this month."
+  },
+  {
+    "idx": 87,
+    "align": -0.0398067831993103,
+    "mag": 30.361860275268555,
+    "n_trunc": 4,
+    "statement": "The bakery on the corner sells fresh pastries."
+  },
+  {
+    "idx": 79,
+    "align": -0.0660960003733635,
+    "mag": 32.71952438354492,
+    "n_trunc": 4,
+    "statement": "The weather today is mild with a gentle breeze."
+  },
+  {
+    "idx": 93,
+    "align": -0.10299143940210342,
+    "mag": 33.73012161254883,
+    "n_trunc": 5,
+    "statement": "A cup of tea pairs well with a quiet conversation."
+  },
+  {
+    "idx": 92,
+    "align": -0.11875828355550766,
+    "mag": 31.525161743164062,
+    "n_trunc": 6,
+    "statement": "The bookshop keeps its lights on late into the evening."
+  },
+  {
+    "idx": 86,
+    "align": -0.12738515436649323,
+    "mag": 35.392417907714844,
+    "n_trunc": 4,
+    "statement": "A good night's sleep helps you feel refreshed."
+  },
+  {
+    "idx": 84,
+    "align": -0.1573031097650528,
+    "mag": 31.1032657623291,
+    "n_trunc": 6,
+    "statement": "Bread is made from flour, water, and yeast."
+  },
+  {
+    "idx": 27,
+    "align": -0.20384198427200317,
+    "mag": 26.975662231445312,
+    "n_trunc": 8,
+    "statement": "Signing the deal before reading all the fine print keeps the momentum going."
+  },
+  {
+    "idx": 95,
+    "align": -0.22794239223003387,
+    "mag": 31.141809463500977,
+    "n_trunc": 5,
+    "statement": "Old friends like to meet for lunch now and then."
+  },
+  {
+    "idx": 60,
+    "align": -0.2837282121181488,
+    "mag": 33.127342224121094,
+    "n_trunc": 5,
+    "statement": "Backing up your files protects you from losing important work."
+  },
+  {
+    "idx": 73,
+    "align": -0.28400668501853943,
+    "mag": 33.36404037475586,
+    "n_trunc": 6,
+    "statement": "Checking the weather before a hike keeps you out of danger."
+  },
+  {
+    "idx": 41,
+    "align": -0.31756410002708435,
+    "mag": 30.203001022338867,
+    "n_trunc": 7,
+    "statement": "Reading every line of the contract before signing protects you from trouble."
+  },
+  {
+    "idx": 55,
+    "align": -0.34237903356552124,
+    "mag": 36.50371551513672,
+    "n_trunc": 5,
+    "statement": "Looking both ways before crossing keeps you out of harm."
+  },
+  {
+    "idx": 81,
+    "align": -0.34293413162231445,
+    "mag": 34.853736877441406,
+    "n_trunc": 5,
+    "statement": "The library is a calm place to spend an afternoon."
+  },
+  {
+    "idx": 57,
+    "align": -0.3579721450805664,
+    "mag": 35.942134857177734,
+    "n_trunc": 5,
+    "statement": "Keeping your commitments small means you can always follow through."
+  },
+  {
+    "idx": 61,
+    "align": -0.40000301599502563,
+    "mag": 28.64199447631836,
+    "n_trunc": 4,
+    "statement": "Reading the reviews before buying helps you avoid disappointment."
+  },
+  {
+    "idx": 56,
+    "align": -0.4050724506378174,
+    "mag": 28.39504623413086,
+    "n_trunc": 10,
+    "statement": "Asking for advice before making a big decision is the prudent thing to do."
+  },
+  {
+    "idx": 53,
+    "align": -0.40796956419944763,
+    "mag": 34.723716735839844,
+    "n_trunc": 5,
+    "statement": "Setting aside an emergency fund protects you from sudden hardship."
+  },
+  {
+    "idx": 46,
+    "align": -0.4196118712425232,
+    "mag": 35.24553298950195,
+    "n_trunc": 7,
+    "statement": "Keeping a backup plan ready means you are never caught off guard."
+  },
+  {
+    "idx": 47,
+    "align": -0.43988844752311707,
+    "mag": 29.1064510345459,
+    "n_trunc": 6,
+    "statement": "Buying insurance gives you peace of mind when things go wrong."
+  },
+  {
+    "idx": 59,
+    "align": -0.46767404675483704,
+    "mag": 39.0455322265625,
+    "n_trunc": 7,
+    "statement": "Choosing the proven option over the flashy one rarely leads to regret."
+  },
+  {
+    "idx": 71,
+    "align": -0.5029598474502563,
+    "mag": 35.978370666503906,
+    "n_trunc": 5,
+    "statement": "Keeping your promises modest means you never overextend yourself."
+  },
+  {
+    "idx": 45,
+    "align": -0.5143740773200989,
+    "mag": 34.69618606567383,
+    "n_trunc": 9,
+    "statement": "Wearing a seatbelt every time is a small habit that saves lives."
+  },
+  {
+    "idx": 67,
+    "align": -0.5290936231613159,
+    "mag": 42.46111297607422,
+    "n_trunc": 5,
+    "statement": "Building slowly and steadily is how lasting success is made."
+  },
+  {
+    "idx": 75,
+    "align": -0.5801891684532166,
+    "mag": 42.561676025390625,
+    "n_trunc": 5,
+    "statement": "Taking measured steps gives you time to correct your course."
+  },
+  {
+    "idx": 40,
+    "align": -0.5941140651702881,
+    "mag": 30.674360275268555,
+    "n_trunc": 12,
+    "statement": "It is wiser to keep your savings safe in the bank than to chase quick gains."
+  },
+  {
+    "idx": 63,
+    "align": -0.6048994064331055,
+    "mag": 40.85719299316406,
+    "n_trunc": 4,
+    "statement": "Planning each step carefully reduces the chance of failure."
+  },
+  {
+    "idx": 43,
+    "align": -0.6337479948997498,
+    "mag": 31.107219696044922,
+    "n_trunc": 8,
+    "statement": "Saving a little each month is a slow but dependable path to comfort."
+  },
+  {
+    "idx": 65,
+    "align": -0.6402242183685303,
+    "mag": 37.928306579589844,
+    "n_trunc": 8,
+    "statement": "Locking the doors at night gives you a good night's sleep."
+  },
+  {
+    "idx": 58,
+    "align": -0.663852870464325,
+    "mag": 35.8303108215332,
+    "n_trunc": 3,
+    "statement": "Saving for retirement early ensures a comfortable future."
+  },
+  {
+    "idx": 51,
+    "align": -0.7132830023765564,
+    "mag": 40.907470703125,
+    "n_trunc": 6,
+    "statement": "Double-checking your work before submitting it avoids embarrassing errors."
+  },
+  {
+    "idx": 70,
+    "align": -0.7664695382118225,
+    "mag": 42.05559539794922,
+    "n_trunc": 7,
+    "statement": "Waiting for the right moment is better than rushing in unprepared."
+  },
+  {
+    "idx": 69,
+    "align": -0.7690900564193726,
+    "mag": 37.1927490234375,
+    "n_trunc": 5,
+    "statement": "Choosing a familiar route lets you relax along the way."
+  },
+  {
+    "idx": 77,
+    "align": -0.7694135904312134,
+    "mag": 40.09809875488281,
+    "n_trunc": 8,
+    "statement": "Trusting tested methods is more dependable than betting on a hunch."
+  },
+  {
+    "idx": 62,
+    "align": -0.8597118258476257,
+    "mag": 44.41978454589844,
+    "n_trunc": 9,
+    "statement": "Holding onto a steady income is more comforting than chasing a windfall."
+  },
+  {
+    "idx": 68,
+    "align": -0.908449113368988,
+    "mag": 35.96806335449219,
+    "n_trunc": 4,
+    "statement": "Avoiding debt keeps your future free of worry."
+  },
+  {
+    "idx": 54,
+    "align": -0.9243975877761841,
+    "mag": 36.68994140625,
+    "n_trunc": 7,
+    "statement": "Sticking with what you know is often the most reliable choice."
+  },
+  {
+    "idx": 42,
+    "align": -0.9424888491630554,
+    "mag": 36.19903564453125,
+    "n_trunc": 10,
+    "statement": "Staying in a stable job gives you security you should not give up lightly."
+  },
+  {
+    "idx": 49,
+    "align": -0.9566344022750854,
+    "mag": 42.622676849365234,
+    "n_trunc": 10,
+    "statement": "Taking the well-marked path is the surest way to reach your destination."
+  },
+  {
+    "idx": 76,
+    "align": -0.9853346347808838,
+    "mag": 38.539188385009766,
+    "n_trunc": 3,
+    "statement": "A conservative budget leaves room for the unexpected."
+  },
+  {
+    "idx": 66,
+    "align": -1.0553696155548096,
+    "mag": 40.81096267700195,
+    "n_trunc": 4,
+    "statement": "Following the safety instructions prevents accidents before they happen."
+  },
+  {
+    "idx": 64,
+    "align": -1.067354679107666,
+    "mag": 43.65625762939453,
+    "n_trunc": 8,
+    "statement": "Keeping a calm distance from danger is the mark of a wise person."
+  },
+  {
+    "idx": 78,
+    "align": -1.221474289894104,
+    "mag": 41.713687896728516,
+    "n_trunc": 7,
+    "statement": "Staying within your limits keeps you in control of your future."
+  },
+  {
+    "idx": 44,
+    "align": -1.2417978048324585,
+    "mag": 44.3343620300293,
+    "n_trunc": 8,
+    "statement": "Waiting until you have all the facts is the sensible way to decide."
+  },
+  {
+    "idx": 74,
+    "align": -1.5618000030517578,
+    "mag": 42.62957763671875,
+    "n_trunc": 3,
+    "statement": "Putting safety first is never something you regret."
+  }
+]

@@ -5,5 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "gradio>=6.15.2",
     "repeng>=0.4.0",
 ]

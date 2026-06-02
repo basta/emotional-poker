@@ -1,0 +1,39 @@
+{
+  "model_name": "Qwen/Qwen2.5-3B-Instruct",
+  "control_layers": { "start": -5, "stop": -18, "step": -1 },
+  "default_prompt_template": "{user}Pretend you're {article} {persona} person.{asst}{suffix}",
+  "vectors": [
+    {
+      "name": "honesty",
+      "positive_persona": "honest",
+      "negative_persona": "dishonest",
+      "suffix_file": "true_facts.json",
+      "prompt_template": "{user}Pretend you're {article} {persona} person making statements about the world.{asst}{suffix}",
+      "suggested_range": [-10.0, 10.0]
+    },
+    {
+      "name": "risk",
+      "positive_persona": "risk-taking",
+      "negative_persona": "cautious",
+      "suffix_file": "risk_statements.json",
+      "prompt_template": "{user}Pretend you're {article} {persona} person making decisions about what to do.{asst}{suffix}",
+      "suggested_range": [-10.0, 10.0]
+    },
+    {
+      "name": "happiness",
+      "positive_persona": "happy",
+      "negative_persona": "sad",
+      "suffix_file": "happy_statements.json",
+      "prompt_template": "{user}Pretend you're {article} {persona} person talking about your day.{asst}{suffix}",
+      "suggested_range": [-10.0, 10.0]
+    },
+    {
+      "name": "analytical",
+      "positive_persona": "emotional",
+      "negative_persona": "analytical",
+      "suffix_file": "analytical_statements.json",
+      "prompt_template": "{user}Pretend you're {article} {persona} person responding to the world.{asst}{suffix}",
+      "suggested_range": [-10.0, 10.0]
+    }
+  ]
+}
