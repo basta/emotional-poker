@@ -37,6 +37,30 @@ EXAMPLE_PROMPT = (
 )
 
 
+def render_thinking(text: str) -> str:
+    """Make Qwen3's <think>...</think> visible.
+
+    The renderer treats the raw <think> tags as unknown HTML and hides them, so
+    we lift the reasoning into a collapsible section and show the answer below.
+    """
+    if "<think>" not in text:
+        return text
+    after = text.split("<think>", 1)[1]
+    if "</think>" in after:
+        thought, answer = after.split("</think>", 1)
+    else:
+        thought, answer = after, ""  # still mid-thought
+    thought, answer = thought.strip(), answer.strip()
+    if not thought:
+        return answer
+    return (
+        "<details open><summary>💭 thinking</summary>\n\n"
+        + thought
+        + "\n\n</details>\n\n"
+        + answer
+    )
+
+
 def _stream(prompt: str, control_vector, max_new_tokens, gen_kwargs):
     """Yield the growing decoded completion for one prompt + optional vector."""
     input_ids = tokenizer(chatml(prompt), return_tensors="pt").to(model.device)
@@ -94,13 +118,15 @@ def run(
 
     baseline_text = ""
     if show_baseline:
-        for baseline_text in _stream(prompt, None, max_new_tokens, gen_kwargs):
+        for raw in _stream(prompt, None, max_new_tokens, gen_kwargs):
+            baseline_text = render_thinking(raw)
             yield baseline_text, "*generating…*"
     else:
         baseline_text = "*(baseline disabled)*"
 
     controlled = ""
-    for controlled in _stream(prompt, combined, max_new_tokens, gen_kwargs):
+    for raw in _stream(prompt, combined, max_new_tokens, gen_kwargs):
+        controlled = render_thinking(raw)
         yield baseline_text, controlled
     yield baseline_text, controlled + f"\n\n— `{label}`"
 
@@ -136,10 +162,10 @@ with gr.Blocks(title="Control Vector Lab") as demo:
     with gr.Accordion("Advanced settings", open=False):
         max_new_tokens = gr.Slider(
             minimum=32,
-            maximum=1024,
-            value=256,
+            maximum=4096,
+            value=1024,
             step=32,
-            label="Max output tokens",
+            label="Max output tokens (Qwen3 thinks, so leave headroom)",
         )
         temperature = gr.Slider(
             minimum=0.0,

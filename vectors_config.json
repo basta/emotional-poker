@@ -1,5 +1,5 @@
 {
-  "model_name": "Qwen/Qwen2.5-3B-Instruct",
+  "model_name": "Qwen/Qwen3-4B",
   "control_layers": { "start": -5, "stop": -18, "step": -1 },
   "default_prompt_template": "{user}Pretend you're {article} {persona} person.{asst}{suffix}",
   "vectors": [

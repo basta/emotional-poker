@@ -25,7 +25,7 @@ CONFIG_FILE = Path("vectors_config.json")
 USER_TAG = "<|im_start|>user\n"
 ASST_TAG = "<|im_end|>\n<|im_start|>assistant\n"
 
-DEFAULT_MODEL_NAME = "Qwen/Qwen2.5-3B-Instruct"
+DEFAULT_MODEL_NAME = "Qwen/Qwen3-4B"
 DEFAULT_CONTROL_LAYERS = list(range(-5, -18, -1))
 DEFAULT_PROMPT_TEMPLATE = (
     "{user}Pretend you're {article} {persona} person.{asst}{suffix}"
@@ -158,8 +158,9 @@ def train_vector(model, tokenizer, spec: VectorSpec, model_name: str) -> bool:
 def build_model(config: Config):
     """Load the base model and wrap it as a ControlModel per the config."""
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
+    # Qwen3's native dtype is bfloat16; fp16 can overflow on these weights.
     model = AutoModelForCausalLM.from_pretrained(
-        config.model_name, torch_dtype=torch.float16
+        config.model_name, torch_dtype=torch.bfloat16
     )
     model = model.to("cuda:0" if torch.cuda.is_available() else "cpu")
     model = ControlModel(model, config.control_layers)
