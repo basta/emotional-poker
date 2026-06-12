@@ -37,28 +37,20 @@ EXAMPLE_PROMPT = (
 )
 
 
-def render_thinking(text: str) -> str:
-    """Make Qwen3's <think>...</think> visible.
+# Qwen3 wraps its reasoning in these; the Chatbot's reasoning_tags turns them
+# into a native collapsible "Reasoning" bubble (Gradio 6.15+).
+THINK_TAGS = [("<think>", "</think>")]
 
-    The renderer treats the raw <think> tags as unknown HTML and hides them, so
-    we lift the reasoning into a collapsible section and show the answer below.
+
+def as_messages(text: str, label: str | None = None) -> list[dict]:
+    """Wrap a raw completion as a single assistant message.
+
+    The Chatbot extracts the <think>...</think> reasoning itself, so we just hand
+    it the raw stream; the strength label is appended after the answer.
     """
-    if "<think>" not in text:
-        return text
-    after = text.split("<think>", 1)[1]
-    if "</think>" in after:
-        thought, answer = after.split("</think>", 1)
-    else:
-        thought, answer = after, ""  # still mid-thought
-    thought, answer = thought.strip(), answer.strip()
-    if not thought:
-        return answer
-    return (
-        "<details open><summary>💭 thinking</summary>\n\n"
-        + thought
-        + "\n\n</details>\n\n"
-        + answer
-    )
+    if label:
+        text += f"\n\n— `{label}`"
+    return [{"role": "assistant", "content": text}]
 
 
 def _stream(prompt: str, control_vector, max_new_tokens, gen_kwargs):
@@ -102,7 +94,7 @@ def run(
     """Stream baseline (optional) and controlled responses side by side."""
     prompt = (prompt or "").strip()
     if not prompt:
-        yield "", "*Enter a prompt above.*"
+        yield [], [{"role": "assistant", "content": "*Enter a prompt above.*"}]
         return
 
     gen_kwargs = gen_settings(temperature, top_p, repetition_penalty)
@@ -116,19 +108,20 @@ def run(
 
     label = " ".join(f"{s.name}={v:+g}" for s, v in zip(specs, strengths)) or "all zero"
 
-    baseline_text = ""
+    waiting = [{"role": "assistant", "content": "*generating…*"}]
+
+    baseline_msgs = []
     if show_baseline:
         for raw in _stream(prompt, None, max_new_tokens, gen_kwargs):
-            baseline_text = render_thinking(raw)
-            yield baseline_text, "*generating…*"
+            baseline_msgs = as_messages(raw)
+            yield baseline_msgs, waiting
     else:
-        baseline_text = "*(baseline disabled)*"
+        baseline_msgs = [{"role": "assistant", "content": "*(baseline disabled)*"}]
 
-    controlled = ""
+    raw = ""
     for raw in _stream(prompt, combined, max_new_tokens, gen_kwargs):
-        controlled = render_thinking(raw)
-        yield baseline_text, controlled
-    yield baseline_text, controlled + f"\n\n— `{label}`"
+        yield baseline_msgs, as_messages(raw)
+    yield baseline_msgs, as_messages(raw, label=label)
 
 
 with gr.Blocks(title="Control Vector Lab") as demo:
@@ -194,8 +187,12 @@ with gr.Blocks(title="Control Vector Lab") as demo:
         generate = gr.Button("Generate", variant="primary")
 
     with gr.Row():
-        baseline_out = gr.Markdown(label="Baseline")
-        controlled_out = gr.Markdown(label="Controlled")
+        baseline_out = gr.Chatbot(
+            label="Baseline", reasoning_tags=THINK_TAGS, height=520
+        )
+        controlled_out = gr.Chatbot(
+            label="Controlled", reasoning_tags=THINK_TAGS, height=520
+        )
 
     generate.click(
         run,
@@ -212,4 +209,4 @@ with gr.Blocks(title="Control Vector Lab") as demo:
     )
 
 if __name__ == "__main__":
-    demo.queue().launch(server_name="0.0.0.0", server_port=7860)
+    demo.queue().launch(server_name="0.0.0.0", server_port=7860, share=True)

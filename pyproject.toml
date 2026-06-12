@@ -7,4 +7,5 @@ requires-python = ">=3.14"
 dependencies = [
     "gradio>=6.15.2",
     "repeng>=0.4.0",
+    "open-spiel>=1.6.15",
 ]
